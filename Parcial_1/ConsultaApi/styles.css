@@ -1,9 +1,11 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 12px;
     text-align: center;
     color: #fff;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,43,121,1) 72%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,43,121,1) 100%);
   }
 
 /* CSS */
@@ -19,7 +21,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: 'Press Start 2P', system-ui;  
   height: 48px;
   justify-content: center;
   line-height: 1;
