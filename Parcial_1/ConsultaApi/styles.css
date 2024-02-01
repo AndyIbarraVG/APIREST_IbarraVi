@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,43,121,1) 72%, rgba(0,212,255,1) 100%);
+  }
+
+/* CSS */
+#btnFetchData {
+  margin-bottom: 20px;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+#btnFetchData:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#btnFetchData:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#btnFetchData:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+  #pokemon-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #pokemon-table {
+    margin: 0 auto; /* Establecer margen automático a izquierda y derecha para centrar */
+  }
+  
+  #pokemon-list li {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #pokemon-list ul {
+    margin: 0;
+    display: flex;
+    padding-inline-start: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  #pokemon-details {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #pokemon-details li {
+    margin: 0 10px;
+  }
+  
+  #pokemon-image {
+    margin-top: 10px;
+  }
+  
+  /* Tipos de Pokémon y sus colores representativos */
+  .type-normal {
+    background-color: #A8A77A; /* Normal */
+    color: #FFFFFF; /* Electric */
+
+  }
+  
+  .type-fighting {
+    background-color: #C22E28; /* Fighting */
+    color: #FFFFFF;
+  }
+  
+  .type-flying {
+    background-color: #A98FF3; /* Flying */
+    color: #FFFFFF;
+  }
+
+  .type-poison {
+    background-color: #A33EA1; /* Poison */
+    color: #FFFFFF;
+  }
+
+  .type-ground {
+    background-color: #E2BF65; /* Ground */
+    color: #FFFFFF;
+  }
+
+  .type-rock {
+    background-color: #B6A136; /* Rock */
+    color: #FFFFFF;
+  }
+
+  .type-bug {
+    background-color: #A6B91A; /* Bug */
+    color: #FFFFFF;
+  }
+
+  .type-ghost {
+    background-color: #735797; /* Ghost */
+    color: #FFFFFF;
+  }
+
+  .type-steel {
+    background-color: #B7B7CE; /* Steel */
+    color: #FFFFFF;
+  }
+
+  .type-fire {
+    background-color: #EE8130; /* Fire */
+    color: #FFFFFF;
+  }
+
+  .type-water {
+    background-color: #6390F0; /* Water */
+    color: #FFFFFF;
+  }
+
+  .type-grass {
+    background-color: #7AC74C; /* Grass */
+    color: #FFFFFF;
+  }
+
+  .type-electric {
+    background-color: #F7D02C; /* Electric */
+    color: #FFFFFF;
+  }
+
+  .type-psychic {
+    background-color: #F95587; /* Psychic */
+    color: #FFFFFF;
+  }
+
+  .type-ice {
+    background-color: #96D9D6; /* Ice */
+    color: #FFFFFF;
+  }
+
+  .type-dragon {
+    background-color: #6F35FC; /* Dragon */
+    color: #FFFFFF;
+  }
+
+  .type-dark {
+    background-color: #705746; /* Dark */
+    color: #FFFFFF;
+  }
+
+  .type-fairy {
+    background-color: #D685AD; /* Fairy */
+    color: #FFFFFF;
+  }
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+
+}
+th, td {
+    border: 1px solid #000;
+    background-color: #faf9f944;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #b3d5f5;
+    color: #000000d5;
+}
+img {
+    max-width: 50px;
+    max-height: 50px;
+}
