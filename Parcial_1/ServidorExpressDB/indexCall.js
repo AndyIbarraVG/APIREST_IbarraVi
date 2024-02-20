@@ -5,23 +5,21 @@ const app = express();
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    database: 'Pokemon'
+    database: 'pokemon'
 });
 
-connection.connect((err) => {
-    if (err) {
-        console.log('Error connecting to Db');
-        return;
-    }
-    console.log('Connection established');
-}
-);
-
 app.get('/pokemons', (req, res) => {
-    connection.query('SELECT * FROM pokemon', (err, rows) => {
-        if (err) throw err;
-        res.json(rows);
-    });
+    if (typeof req.query.id_pokemon === 'undefined') {
+        connection.query('SELECT * FROM pokemons', (err, rows) => {
+            if (err) throw err;
+            res.json(rows);
+        });
+    } else {
+        connection.query(`SELECT * FROM pokemons WHERE id_pokemon = ${req.query.id_pokemon}`, (err, rows) => {
+            if (err) throw err;
+            res.json(rows);
+        });
+    }
 });
 
 app.listen(3000, () => {
