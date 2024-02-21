@@ -32,10 +32,6 @@ app.get('/pokemons', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Servidor iniciado en http://localhost:3000');
-});
-
 app.post('/pokemons', async (req, res) => {
     console.log(req.body);
     const { nombre, tipo, naturaleza,habilidad } = req.body;
@@ -82,4 +78,8 @@ app.delete('/pokemons', async (req, res) => {
     catch (error) {
         console.log(error);
     }
+});
+
+app.listen(3000, () => {
+    console.log('Servidor iniciado en http://localhost:3000');
 });
