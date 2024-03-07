@@ -10,13 +10,8 @@ app.use(basicAuth({
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/login', (req, res) => {
-    if(req.auth.user === 'AndyIbarra'){
-        res.send('Login exitoso');
-    }
-    else{
-        res.send('Login fallido');
-    }
+app.use( (req, res, next) => {
+    res.status(401).send('Solicitud no autorizada');
 });
 
 app.listen(3000, () => {
