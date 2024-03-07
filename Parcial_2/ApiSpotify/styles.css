@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+.content {
+    text-align: center;
+    width: 80%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.iframe-container {
+    justify-content: center;
+    align-items: center;
+}
+
+#album-info {
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 5px;
+    color: #fff;
+}
+
+h1 {
+    color: #1DB954;
+}
+
+#album-link {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #169144;
+}
