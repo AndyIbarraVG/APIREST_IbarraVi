@@ -5,6 +5,8 @@ const fs = require('fs');
  * @file modulopkm.js
  * @module modulopkm
  * @description Este módulo contiene la función ObtienePokemon que retorna un pokemon aleatorio.
+ * @param {string} nombre - Nombre del pokemon.
+ * @param {string} imagen - Imagen del pokemon.
  * @requires jsdoc-api
  * @requires fs
  * @version 1.0
