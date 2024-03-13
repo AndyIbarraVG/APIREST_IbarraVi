@@ -2,7 +2,7 @@
     "plugins": [],
     "recurseDepth": 10,
     "source": {
-        "include": ["./Parcial_2/DocumentacionJs/src"],
+        "include": ["./Parcial_2/JsDocOpciones/src"],
         "exclude": [],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
@@ -19,7 +19,7 @@
     "opts": {
         "template": "node_modules/clean-jsdoc-theme",  
         "encoding": "utf8",               
-        "destination": "./Parcial_2/DocumentacionJs/doc/",          
+        "destination": "./Parcial_2/JsDocOpciones/doc/",          
         "recurse": true
     }
 }
